@@ -3,103 +3,187 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#06080B">
 <title>Top Of The Line Mobile Detailing | Fort Lauderdale</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Mobile interior and exterior detailing for cars, boats and RVs around Fort Lauderdale. Open 7 days, 7 AM to 7 PM. Call (954) 557-6340.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0F2233;--steel:#1C3A52;--water:#2E9BD6;--gloss:#DCE8F0;--page:#F5F8FA;--surface:#fff;--text:#13222E;--muted:#5A6B78;--line:#DCE4EA;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--page:#0B1620;--surface:#122130;--text:#E6EEF4;--muted:#9DB0BF;--line:#21364A;color-scheme:dark}}
-:root[data-theme="dark"]{--page:#0B1620;--surface:#122130;--text:#E6EEF4;--muted:#9DB0BF;--line:#21364A;color-scheme:dark}
+:root{--bg:#06080B;--bg2:#0C1117;--panel:#0F151C;--text:#E9EEF3;--muted:#8B97A4;--line:#1C2630;--blue:#3FB6FF;--blue2:#7FD3FF;color-scheme:dark}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Barlow,system-ui,sans-serif;background:var(--page);color:var(--text);line-height:1.6;font-size:1.05rem}
-svg{display:block;max-width:100%}a{color:inherit}
-a:focus-visible{outline:3px solid var(--water);outline-offset:3px}
-.wrap{max-width:1120px;margin:0 auto;padding:0 5%}
-h1,h2,h3{font-family:"Barlow Condensed",Arial Narrow,sans-serif;font-weight:700;line-height:1.05}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--navy)}
-.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:#fff}
-.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
-.nav b{font-family:"Barlow Condensed",sans-serif;font-size:1.35rem;letter-spacing:.5px}
-.nav a.call{background:var(--water);color:#fff;text-decoration:none;font-weight:600;padding:.5rem 1.1rem;border-radius:999px}
-.hero{background:linear-gradient(160deg,var(--navy),var(--steel));color:#fff;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:2.5rem;align-items:center;padding-top:4rem;padding-bottom:4rem}
-@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
-.hero h1{font-size:clamp(2.8rem,7vw,5rem)}
-.hero p{font-size:1.2rem;opacity:.85;max-width:40ch;margin-top:1rem}
-.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem}
-.btn{text-decoration:none;font-weight:600;padding:.9rem 1.6rem;border-radius:999px;display:inline-block}
-.btn.solid{background:var(--water);color:#fff}.btn.out{border:1.5px solid rgba(255,255,255,.5);color:#fff}
-section{padding:4.5rem 0}
-h2{font-size:clamp(2.2rem,5vw,3.2rem);margin-bottom:.6rem}
-.sub{color:var(--muted);max-width:52ch;margin-bottom:2.2rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem}
-.svc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.6rem;border-top:4px solid var(--water)}
-.svc h3{font-size:1.6rem;margin-bottom:.4rem}.svc p{color:var(--muted)}
-.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;counter-reset:s}
-.how div{counter-increment:s}
-.how div::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;font-family:"Barlow Condensed";font-size:1.4rem;margin-bottom:.8rem}
-.how b{display:block;font-size:1.15rem}
-.how span{color:var(--muted)}
-.band{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
-@media(max-width:760px){.contact{grid-template-columns:1fr}}
-.contact p{margin:.4rem 0}
-table{width:100%;border-collapse:collapse}td{padding:.6rem 0;border-bottom:1px solid var(--line)}td:last-child{text-align:right;color:var(--muted)}
-footer{background:var(--navy);color:#B9C9D6;padding:2rem 0;font-size:.9rem}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:1.02rem;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:focus-visible{outline:2px solid var(--blue);outline-offset:4px;border-radius:6px}
+svg{display:block}
+.wrap{width:min(1220px,100% - 40px);margin-inline:auto}
+h1,h2,h3,.d{font-family:Syne,system-ui,sans-serif;letter-spacing:-.02em;line-height:.95}
+.lbl{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.nav{position:fixed;inset:0 0 auto;z-index:40;padding-top:env(safe-area-inset-top,0px);background:rgba(6,8,11,.6);backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
+.brand{text-decoration:none;font-family:Syne;font-weight:800;letter-spacing:.02em;font-size:1rem;display:flex;align-items:center;gap:.6rem}
+.brand b{display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--blue);box-shadow:0 0 14px var(--blue)}
+.nav nav{display:flex;gap:2rem;align-items:center;font-size:.9rem}
+.nav nav a{text-decoration:none;color:var(--muted)}.nav nav a:hover{color:var(--text)}
+.nav .call{color:#06080B!important;background:var(--text);padding:.55rem 1.1rem;border-radius:999px;font-weight:600}
+@media(max-width:760px){.nav nav a:not(.call){display:none}}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:120px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 50% 75%,rgba(63,182,255,.18),transparent 70%),radial-gradient(600px 300px at 80% 10%,rgba(127,211,255,.08),transparent 70%)}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 60%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 60%,#000 20%,transparent 75%)}
+.hero .wrap{position:relative;text-align:center}
+.hero .lbl{color:var(--blue2)}
+.hero h1{font-weight:800;font-size:clamp(3rem,11vw,10rem);text-transform:uppercase;margin:1.2rem 0 1rem;letter-spacing:-.04em}
+.shine{background:linear-gradient(100deg,#E9EEF3 0%,#E9EEF3 40%,#fff 46%,var(--blue2) 50%,#fff 54%,#E9EEF3 60%,#E9EEF3 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 5s ease-in-out infinite}
+@keyframes sweep{0%{background-position:120% 0}60%,100%{background-position:-20% 0}}
+.hero h1 .o{-webkit-text-stroke:1.5px rgba(233,238,243,.6);color:transparent}
+.hero p{color:var(--muted);max-width:52ch;margin:0 auto;font-size:1.1rem}
+.ctas{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center;margin-top:2.2rem}
+.btn{display:inline-flex;gap:.6rem;align-items:center;text-decoration:none;font-weight:600;padding:1rem 1.6rem;border-radius:999px;transition:transform .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn.b{background:var(--blue);color:#04121C;box-shadow:0 0 0 1px rgba(127,211,255,.5),0 10px 40px rgba(63,182,255,.35)}
+.btn.g{border:1px solid rgba(255,255,255,.18)}
+.car{position:relative;width:min(900px,100%);margin:3rem auto 0;overflow:hidden}
+.car svg{width:100%;height:auto}
+.car .streak{position:absolute;top:22%;left:-30%;width:30%;height:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);filter:blur(6px);animation:pass 5s ease-in-out infinite;mix-blend-mode:screen}
+@keyframes pass{0%{left:-30%}60%,100%{left:110%}}
+.specs{position:relative;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:2rem}
+.specs .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.specs div{padding:1.4rem 1rem;border-left:1px solid var(--line)}
+.specs div:first-child{border-left:0}
+.specs b{display:block;font-family:Syne;font-size:1.25rem}
+.specs span{font-size:.8rem;color:var(--muted)}
+@media(max-width:720px){.specs .wrap{grid-template-columns:1fr 1fr}.specs div:nth-child(3){border-left:0}.specs div:nth-child(n+3){border-top:1px solid var(--line)}}
+section{padding:clamp(5rem,10vw,8rem) 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.sh h2{font-size:clamp(2.6rem,6vw,5rem);font-weight:800;text-transform:uppercase;max-width:12ch}
+.sh p{color:var(--muted);max-width:40ch}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+@media(max-width:980px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+.card{position:relative;border-radius:20px;padding:1px;background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.03) 40%,rgba(255,255,255,.03));overflow:hidden}
+.card::before{content:"";position:absolute;inset:-50%;background:conic-gradient(from 0deg,transparent 0 70%,var(--blue) 80%,transparent 90%);opacity:0;transition:opacity .5s;animation:spin 4s linear infinite}
+.card:hover::before{opacity:1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.card .in{position:relative;background:var(--panel);border-radius:19px;padding:1.8rem;height:100%;min-height:300px;display:flex;flex-direction:column;justify-content:space-between}
+.card .no{font-family:Syne;color:var(--muted);font-size:.85rem}
+.card svg.ic{width:56px;height:56px;margin:1.6rem 0;stroke:var(--blue2)}
+.card h3{font-size:1.6rem;font-weight:700;margin-bottom:.5rem}
+.card p{color:var(--muted);font-size:.95rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:27px;height:1px;background:linear-gradient(90deg,var(--blue),rgba(63,182,255,.1))}
+.st{padding-right:2rem;position:relative}
+.st .dot{width:54px;height:54px;border-radius:50%;background:var(--bg);border:1px solid var(--blue);display:grid;place-items:center;font-family:Syne;font-weight:700;color:var(--blue2);box-shadow:0 0 30px rgba(63,182,255,.25);margin-bottom:1.6rem}
+.st h3{font-size:1.5rem;margin-bottom:.4rem}
+.st p{color:var(--muted)}
+@media(max-width:760px){.steps{grid-template-columns:1fr;gap:2.2rem}.steps::before{display:none}}
+.book{background:var(--bg2);border-top:1px solid var(--line)}
+.book .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+.book h2{font-size:clamp(2.8rem,6vw,5.4rem);font-weight:800;text-transform:uppercase}
+.book .ph{display:block;font-family:Syne;font-weight:700;font-size:clamp(2rem,4.4vw,3.2rem);text-decoration:none;margin:1.4rem 0 .4rem}
+.book .em{color:var(--muted);text-decoration:none;word-break:break-all}
+.hours{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:1.8rem}
+.hours .row{display:flex;justify-content:space-between;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.hours .row:last-child{border-bottom:0}
+.hours span{color:var(--muted)}
+.live{display:inline-flex;gap:.5rem;align-items:center;font-size:.85rem;color:var(--blue2)}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 10px var(--blue);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.3}}
+@media(max-width:820px){.book .wrap{grid-template-columns:1fr}}
+footer{padding:2.5rem 0 calc(2.5rem + env(safe-area-inset-bottom,0px));color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.mbar{display:none}
+@media(max-width:760px){.mbar{display:flex;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:50;background:var(--blue);color:#04121C;border-radius:999px;justify-content:center;padding:1rem;font-weight:600;text-decoration:none;box-shadow:0 10px 40px rgba(63,182,255,.4)}footer{padding-bottom:6rem}}
+html.js [data-r]{opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+html.js [data-r].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html.js [data-r]{opacity:1;transform:none}.shine{color:var(--text);background:none}.car .streak{display:none}}
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<header class="nav"><div class="wrap"><b>Top Of The Line Mobile Detailing</b><a class="call" href="tel:+19545576340">Call</a></div></header>
-<div class="hero"><div class="wrap">
-<div>
-<h1>We bring the showroom shine to you.</h1>
-<p>Full interior and exterior mobile detailing for cars, boats and RVs, at your home or your work, anywhere around Fort Lauderdale.</p>
-<div class="btns"><a class="btn solid" href="tel:+19545576340">Book: (954) 557-6340</a><a class="btn out" href="mailto:Mobiledetailing915@gmail.com">Email us</a></div>
-</div>
-<svg viewBox="0 0 600 360" role="img" aria-label="Freshly detailed car with a glossy shine">
+<header class="nav"><div class="wrap">
+<a class="brand" href="#top"><b></b>TOP OF THE LINE</a>
+<nav><a href="#services">Services</a><a href="#process">Process</a><a href="#book">Hours</a><a class="call" href="tel:+19545576340">(954) 557‑6340</a></nav>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding-bottom:0">
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="wrap">
+<div class="lbl" data-r>Mobile detailing · Fort Lauderdale</div>
+<h1 data-r style="--d:.1s"><span class="shine">Showroom shine.</span><br><span class="o">Delivered.</span></h1>
+<p data-r style="--d:.2s">Full interior and exterior mobile detailing for cars, boats and RVs, at your home or your work, anywhere around Fort Lauderdale.</p>
+<div class="ctas" data-r style="--d:.3s"><a class="btn b" href="tel:+19545576340">Book your detail <span aria-hidden="true">→</span></a><a class="btn g" href="mailto:Mobiledetailing915@gmail.com">Email us</a></div>
+<div class="car" data-r style="--d:.35s" role="img" aria-label="Sleek car silhouette with a light reflection passing across it">
+<svg viewBox="0 0 900 300" aria-hidden="true">
 <defs>
-<linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3FB0EA"/><stop offset=".55" stop-color="#1D6FA3"/><stop offset="1" stop-color="#0E3D5E"/></linearGradient>
-<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cfe6f3"/><stop offset="1" stop-color="#5d8aa6"/></linearGradient>
-<radialGradient id="flr" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#000" stop-opacity=".45"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B3A48"/><stop offset=".45" stop-color="#121A22"/><stop offset="1" stop-color="#07090C"/></linearGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1A2A38"/><stop offset=".5" stop-color="#3B5870"/><stop offset="1" stop-color="#1A2A38"/></linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3FB6FF" stop-opacity="0"/><stop offset=".5" stop-color="#7FD3FF"/><stop offset="1" stop-color="#3FB6FF" stop-opacity="0"/></linearGradient>
+<radialGradient id="flr" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3FB6FF" stop-opacity=".35"/><stop offset="1" stop-color="#3FB6FF" stop-opacity="0"/></radialGradient>
 </defs>
-<ellipse cx="300" cy="300" rx="260" ry="26" fill="url(#flr)"/>
-<path d="M60 250 Q62 205 110 196 L190 186 Q235 130 300 122 L395 122 Q445 126 485 180 L535 192 Q560 200 562 240 L560 262 Q556 276 540 276 L70 276 Q58 274 60 250Z" fill="url(#body)"/>
-<path d="M210 186 Q248 142 300 136 L390 136 Q425 140 455 182 Z" fill="url(#glass)"/>
-<path d="M330 136 L330 184" stroke="#0E3D5E" stroke-width="6"/>
-<path d="M90 214 Q300 196 540 214" stroke="#fff" stroke-opacity=".55" stroke-width="4" fill="none" stroke-linecap="round"/>
-<path d="M240 150 L270 140" stroke="#fff" stroke-opacity=".8" stroke-width="5" stroke-linecap="round"/>
-<g><circle cx="160" cy="276" r="40" fill="#0b1a26"/><circle cx="160" cy="276" r="22" fill="#9fb3c2"/><circle cx="160" cy="276" r="8" fill="#0b1a26"/></g>
-<g><circle cx="462" cy="276" r="40" fill="#0b1a26"/><circle cx="462" cy="276" r="22" fill="#9fb3c2"/><circle cx="462" cy="276" r="8" fill="#0b1a26"/></g>
-<g fill="#fff"><path d="M120 120 l6 -18 l6 18 l18 6 l-18 6 l-6 18 l-6 -18 l-18 -6z" opacity=".9"/><path d="M500 92 l4 -12 l4 12 l12 4 l-12 4 l-4 12 l-4 -12 l-12 -4z" opacity=".8"/><path d="M380 70 l3 -9 l3 9 l9 3 l-9 3 l-3 9 l-3 -9 l-9 -3z" opacity=".7"/></g>
-<g fill="#8fd3f7" opacity=".7"><path d="M60 60 q8 14 0 20 q-8 -6 0 -20z"/><path d="M560 300 q8 14 0 20 q-8 -6 0 -20z"/><path d="M30 150 q6 10 0 15 q-6 -5 0 -15z"/></g>
+<ellipse cx="450" cy="262" rx="420" ry="28" fill="url(#flr)"/>
+<path d="M70 210c0-26 14-42 50-48l120-18c40-40 100-70 190-72h80c70 2 120 30 170 72l70 10c40 6 58 22 60 50v18c0 10-8 18-18 18H88c-10 0-18-8-18-18z" fill="url(#bd)"/>
+<path d="M262 144c38-36 92-58 170-60h70c56 2 98 22 136 58z" fill="url(#gl)"/>
+<path d="M460 86v58" stroke="#06080B" stroke-width="6"/>
+<path d="M90 186c180-16 540-16 730 0" stroke="url(#edge)" stroke-width="2.5" fill="none"/>
+<path d="M120 162c120-10 200-16 260-18" stroke="rgba(255,255,255,.25)" stroke-width="1.5" fill="none"/>
+<rect x="770" y="170" width="44" height="8" rx="4" fill="#E9EEF3" opacity=".9"/>
+<rect x="84" y="176" width="34" height="8" rx="4" fill="#ff4d5a" opacity=".85"/>
+<g><circle cx="230" cy="236" r="46" fill="#05070A"/><circle cx="230" cy="236" r="30" fill="none" stroke="#5A6977" stroke-width="3"/><circle cx="230" cy="236" r="8" fill="#5A6977"/><path d="M230 206v60M200 236h60M209 215l42 42M251 215l-42 42" stroke="#3A4652" stroke-width="2"/></g>
+<g><circle cx="690" cy="236" r="46" fill="#05070A"/><circle cx="690" cy="236" r="30" fill="none" stroke="#5A6977" stroke-width="3"/><circle cx="690" cy="236" r="8" fill="#5A6977"/><path d="M690 206v60M660 236h60M669 215l42 42M711 215l-42 42" stroke="#3A4652" stroke-width="2"/></g>
+<g fill="#fff"><path d="M330 110l4-12 4 12 12 4-12 4-4 12-4-12-12-4z" opacity=".9"/><path d="M610 96l3-8 3 8 8 3-8 3-3 8-3-8-8-3z" opacity=".7"/></g>
 </svg>
+<span class="streak" aria-hidden="true"></span>
+</div>
+</div>
+<div class="specs" data-r><div class="wrap">
+<div><b>7 days</b><span>Monday – Sunday</span></div>
+<div><b>7 AM – 7 PM</b><span>Every day</span></div>
+<div><b>Cars · Boats · RVs</b><span>Nothing too big or small</span></div>
+<div><b>We come to you</b><span>Home or work</span></div>
 </div></div>
-<main>
-<section><div class="wrap">
-<h2>What we detail</h2><p class="sub">Nothing is too big or too small. We come fully equipped and do the work right where your vehicle is parked.</p>
-<div class="grid">
-<div class="svc"><h3>Interior detail</h3><p>Vacuum, seats, carpets, dash, door panels and glass, cleaned top to bottom.</p></div>
-<div class="svc"><h3>Exterior detail</h3><p>Hand wash, wheels and tires, trim and a protective shine.</p></div>
-<div class="svc"><h3>Boats</h3><p>Deck and interior cleaning to get your boat ready for the water.</p></div>
-<div class="svc"><h3>RVs</h3><p>Inside and out, sized for the big rigs.</p></div>
-</div></div></section>
-<section style="padding-top:0"><div class="wrap">
-<h2>How it works</h2><p class="sub">Three steps and your car looks new again.</p>
-<div class="how">
-<div><b>Call or email</b><span>Tell us what you drive and what it needs.</span></div>
-<div><b>We come to you</b><span>At home or at work, on your schedule.</span></div>
-<div><b>Drive away shining</b><span>Inspect it with us before we pack up.</span></div>
-</div></div></section>
-<section class="band"><div class="wrap contact">
-<div><h2>Book your detail</h2>
-<p><a href="tel:+19545576340"><b>(954) 557-6340</b></a></p>
-<p><a href="mailto:Mobiledetailing915@gmail.com">Mobiledetailing915@gmail.com</a></p>
-<p style="color:var(--muted)">Based at 813 SW 10th Ter, Fort Lauderdale. Mobile service across the area.</p>
-<div class="btns" style="margin-top:1.2rem"><a class="btn solid" href="tel:+19545576340">Call now</a></div></div>
-<table aria-label="Hours"><tbody>
-<tr><td>Monday – Sunday</td><td>7:00 AM – 7:00 PM</td></tr>
-</tbody></table>
+</section>
+
+<section id="services"><div class="wrap">
+<div class="sh"><h2 data-r>What we detail</h2><p data-r style="--d:.1s">Nothing is too big or too small. We come fully equipped and do the work right where your vehicle is parked.</p></div>
+<div class="cards">
+<div class="card" data-r><div class="in"><span class="no">01</span><svg class="ic" viewBox="0 0 48 48" fill="none" stroke-width="1.4"><path d="M10 38V22a6 6 0 016-6h4l4-6h0l4 6h4a6 6 0 016 6v16"/><path d="M14 30h20M8 38h32"/></svg><div><h3>Interior detail</h3><p>Vacuum, seats, carpets, dash, door panels and glass, cleaned top to bottom.</p></div></div></div>
+<div class="card" data-r style="--d:.08s"><div class="in"><span class="no">02</span><svg class="ic" viewBox="0 0 48 48" fill="none" stroke-width="1.4"><path d="M6 30l4-10c1-3 4-4 7-4h14c3 0 6 1 7 4l4 10v6H6z"/><circle cx="14" cy="36" r="4"/><circle cx="34" cy="36" r="4"/><path d="M20 8c0 3-3 4-3 7M28 6c0 3-3 4-3 7" stroke-linecap="round"/></svg><div><h3>Exterior detail</h3><p>Hand wash, wheels and tires, trim and a protective shine.</p></div></div></div>
+<div class="card" data-r style="--d:.16s"><div class="in"><span class="no">03</span><svg class="ic" viewBox="0 0 48 48" fill="none" stroke-width="1.4"><path d="M6 30h36l-5 8H11z"/><path d="M22 30V8l14 18H22"/><path d="M4 42c4 0 4-2 8-2s4 2 8 2 4-2 8-2 4 2 8 2 4-2 8-2"/></svg><div><h3>Boats</h3><p>Deck and interior cleaning to get your boat ready for the water.</p></div></div></div>
+<div class="card" data-r style="--d:.24s"><div class="in"><span class="no">04</span><svg class="ic" viewBox="0 0 48 48" fill="none" stroke-width="1.4"><rect x="4" y="12" width="34" height="22" rx="3"/><path d="M38 20h3l3 6v8h-6M10 18h8v6h-8zM24 18h8v6h-8z"/><circle cx="12" cy="36" r="3.5"/><circle cx="34" cy="36" r="3.5"/></svg><div><h3>RVs</h3><p>Inside and out, sized for the big rigs.</p></div></div></div>
+</div>
+</div></section>
+
+<section id="process" style="padding-top:0"><div class="wrap">
+<div class="sh"><h2 data-r>How it works</h2><p data-r style="--d:.1s">Three steps and your car looks new again.</p></div>
+<div class="steps">
+<div class="st" data-r><div class="dot">01</div><h3>Call or email</h3><p>Tell us what you drive and what it needs.</p></div>
+<div class="st" data-r style="--d:.12s"><div class="dot">02</div><h3>We come to you</h3><p>At home or at work, on your schedule.</p></div>
+<div class="st" data-r style="--d:.24s"><div class="dot">03</div><h3>Drive away shining</h3><p>Inspect it with us before we pack up.</p></div>
+</div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap">
+<div data-r><div class="lbl">Book your detail</div><h2 style="margin-top:1rem">Ready to <span class="shine">shine?</span></h2>
+<a class="ph" href="tel:+19545576340">(954) 557‑6340</a>
+<a class="em" href="mailto:Mobiledetailing915@gmail.com">Mobiledetailing915@gmail.com</a>
+<p style="color:var(--muted);margin-top:.6rem;font-size:.95rem">Based at 813 SW 10th Ter, Fort Lauderdale. Mobile service across the area.</p>
+<div class="ctas" style="justify-content:flex-start"><a class="btn b" href="tel:+19545576340">Call now</a></div></div>
+<div class="hours" data-r style="--d:.15s">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem"><span class="lbl">Hours</span><span class="live" id="live"><i></i><span>Open 7 days</span></span></div>
+<div class="row"><span>Monday – Friday</span><b>7:00 AM – 7:00 PM</b></div>
+<div class="row"><span>Saturday</span><b>7:00 AM – 7:00 PM</b></div>
+<div class="row"><span>Sunday</span><b>7:00 AM – 7:00 PM</b></div>
+</div>
 </div></section>
 </main>
-<footer><div class="wrap"><span>© 2026 Top Of The Line Mobile Detailing, Fort Lauderdale</span><span style="opacity:.6">Demo site prepared for Top Of The Line Mobile Detailing</span></div></footer>
-</body></html>
+
+<footer><div class="wrap"><span>© 2026 Top Of The Line Mobile Detailing, Fort Lauderdale</span><span>Demo site prepared for Top Of The Line Mobile Detailing</span></div></footer>
+<a class="mbar" href="tel:+19545576340">Call to book · (954) 557‑6340</a>
+<script>
+(()=>{try{const h=+new Intl.DateTimeFormat('en-US',{hour:'numeric',hour12:false,timeZone:'America/New_York'}).format(new Date());const l=document.querySelector('#live span');if(l)l.textContent=(h>=7&&h<19)?'Open now':'Opens 7 AM'}catch(e){}
+const els=document.querySelectorAll('[data-r]');if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(e=>e.classList.add('in'));return}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -30px 0px'});els.forEach(e=>io.observe(e));})();
+</script>
+</body>
+</html>
