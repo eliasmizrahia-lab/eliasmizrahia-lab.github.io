@@ -86,6 +86,7 @@ section{padding:84px 0}
 .plan ul{list-style:none;padding:0;margin-bottom:26px;flex:1}
 .plan li{padding:7px 0 7px 26px;position:relative;font-size:.96rem;border-top:1px solid var(--line)}
 .plan li::before{content:"✓";position:absolute;left:2px;color:var(--accent);font-weight:600}
+.pp{min-height:50px;margin-top:4px}.pp-note{font-size:.82rem;color:var(--muted);margin:0 0 10px}.pp-done{background:var(--soft);border-radius:12px;padding:14px;font-size:.92rem}
 .fine{font-size:.85rem;color:var(--muted);margin-top:22px;max-width:900px}
 @media (max-width:760px){ .plans{grid-template-columns:1fr} }
 
@@ -201,7 +202,8 @@ footer a{color:var(--muted)}
           <li>The website is yours to keep</li>
           <li>Live within 48 hours of payment</li>
         </ul>
-        <a class="btn ghost" href="#contact">Choose Own it</a>
+        <p class="pp-note">Seen your preview and ready to go live? Pay securely with PayPal or card.</p>
+        <div class="pp" id="pp-own-it"></div>
       </div>
       <div class="plan pop reveal">
         <span class="tag">Low start</span>
@@ -215,10 +217,11 @@ footer a{color:var(--muted)}
           <li>Switch to owning it any time by paying the rest of the $499</li>
           <li>Live within 48 hours of payment</li>
         </ul>
-        <a class="btn accent" href="#contact">Choose Start today</a>
+        <p class="pp-note">Seen your preview and ready to go live? Pay securely with PayPal or card.</p>
+        <div class="pp" id="pp-start-today"></div>
       </div>
     </div>
-    <p class="fine">Small updates means changes like hours, prices, photos, menu items and text, up to about 30 minutes of work a month. Bigger changes are quoted separately before any work starts. See the <a href="terms.html">Terms &amp; Refund Policy</a>.</p>
+    <p class="fine">Don't have a preview yet? <a href="#contact">Ask for your free preview</a> first. Payments are processed by PayPal. Small updates means changes like hours, prices, photos, menu items and text, up to about 30 minutes of work a month. Bigger changes are quoted separately before any work starts. See the <a href="terms.html">Terms &amp; Refund Policy</a>.</p>
   </div>
 </section>
 
@@ -256,6 +259,27 @@ footer a{color:var(--muted)}
 if(!('IntersectionObserver'in window)){els.forEach(e=>e.classList.add('in'));return}
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 els.forEach(e=>io.observe(e));})();
+</script>
+<script src="https://www.paypal.com/sdk/js?client-id=BAAU646L36qm47W7GWCkr3rytDJBi-MXa4svkF9GijABIel0URtw1L_lSevOjJ4whbBmYB6SwzyPERqJrc&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+(function(){
+  if(!window.paypal) return;
+  function mount(id, planId, planName){
+    paypal.Buttons({
+      style:{shape:'pill',color:'gold',layout:'vertical',label:'subscribe'},
+      createSubscription:function(data,actions){return actions.subscription.create({plan_id:planId});},
+      onApprove:function(data){
+        var el=document.getElementById(id);
+        el.innerHTML='';
+        var box=document.createElement('div'); box.className='pp-done';
+        box.textContent='Thank you! Your '+planName+' plan is active (ID '+data.subscriptionID+'). Please email eliasmizrahia@gmail.com with your business name and the domain you want, and your site will be live within 48 hours.';
+        el.appendChild(box);
+      }
+    }).render('#'+id);
+  }
+  mount('pp-own-it','P-96924570AV498221TNL54LGY','Own it');
+  mount('pp-start-today','P-88306320D11092845NL54L7A','Start today');
+})();
 </script>
 </body>
 </html>
